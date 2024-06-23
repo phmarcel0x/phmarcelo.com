@@ -7,7 +7,26 @@
 }
 
 body {
-    background: #f9fafb;
+    background-color: whitesmoke;
+    background-image: linear-gradient(30deg, #ccc 12%, transparent 12.5%, transparent 87%, #ccc 87.5%, #ccc),
+    linear-gradient(150deg, #ccc 12%, transparent 12.5%, transparent 87%, #ccc 87.5%, #ccc),
+    linear-gradient(30deg, #ccc 12%, transparent 12.5%, transparent 87%, #ccc 87.5%, #ccc),
+    linear-gradient(150deg, #ccc 12%, transparent 12.5%, transparent 87%, #ccc 87.5%, #ccc),
+    linear-gradient(60deg, #eee 25%, transparent 25.5%, transparent 75%, #eee 75%, #eee),
+    linear-gradient(60deg, #eee 25%, transparent 25.5%, transparent 75%, #eee 75%, #eee);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    /* background-color: #f7f7f7; /* Slightly lighter base color
+    background-image: 
+    linear-gradient(30deg, #ddd 12%, transparent 12.5%, transparent 87%, #ddd 87.5%, #ddd),
+    linear-gradient(150deg, #ddd 12%, transparent 12.5%, transparent 87%, #ddd 87.5%, #ddd),
+    linear-gradient(30deg, #ddd 12%, transparent 12.5%, transparent 87%, #ddd 87.5%, #ddd),
+    linear-gradient(150deg, #ddd 12%, transparent 12.5%, transparent 87%, #ddd 87.5%, #ddd),
+    linear-gradient(60deg, rgba(238, 238, 238, 0.6) 25%, transparent 25.5%, transparent 75%, rgba(238, 238, 238, 0.6) 75%, rgba(238, 238, 238, 0.6)),
+    linear-gradient(60deg, rgba(238, 238, 238, 0.6) 25%, transparent 25.5%, transparent 75%, rgba(238, 238, 238, 0.6) 75%, rgba(238, 238, 238, 0.6));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
+
     color: #333;
     display: flex;
     justify-content: center;
@@ -17,9 +36,9 @@ body {
 }
 
 header {
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
-    background: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
