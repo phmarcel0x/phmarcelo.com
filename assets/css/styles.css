@@ -1,0 +1,104 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f9fafb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%; /* Adjust based on your design */
+    height: auto;
+    border-radius: 50%;
+}
+
+.header-content {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #1e4c40; /* Match the gradient color */
+}
+
+.header-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.highlight.software {
+    color: #3b82f6; /* Blue */
+}
+
+.highlight.uiux {
+    color: #10b981; /* Green */
+}
+
+.highlight.innovator {
+    color: #a855f7; /* Purple */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007acc; /* Highlight color on hover */
+}
+
+.profile-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 150px; /* Adjust based on your design */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
