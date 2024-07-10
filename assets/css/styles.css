@@ -1,13 +1,14 @@
 /* styles.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
-    font-family: "Barlow", sans-serif;
-    font-weight: 500;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
     font-style: normal;
     vertical-align: baseline;
 }
@@ -39,10 +40,10 @@ header {
     align-items: center;
     border-radius: 10px;
     padding: 15px;
-    max-width: 75%;
+    max-width: 60%;
     width: 100%;
     margin-bottom: 200px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .profile-picture {
@@ -50,13 +51,16 @@ header {
     justify-content: center;
     align-items: center;
     margin-left: 100px;
+    perspective: 1000px;
 }
 
 .profile-picture img {
-    width: 300px;
+    width: auto;
     height: auto;
     border-radius: 10px;
     max-width: 300px;
+    /* animation: rotate 3s linear infinite; */
+    transform-style:flat;
 }
 
 .logo {
@@ -64,29 +68,32 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .inline-logo {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
+    width: 90px;
+    height: middle;
     vertical-align: middle;
-    margin-right: 10px; /* Space between logo and text */
+    margin-right: 5px;
+    border-radius: 50%; 
 }
 
 .header-content {
     flex: 3;
     padding: 0 20px;
+    text-align: left;
 }
 
 .header-content h1 {
-    font-size: 4em;
+    font-size: 2.2em;
     font-weight: 700;
     margin-bottom: 0.5em;
     color: #1e4c40; /* Match the gradient color */
 }
 
 .header-content p {
-    font-size: 2.1em;
+    font-size: 1.5em;
     line-height: 1.5;
     margin-bottom: 0.5em;
 }
@@ -114,8 +121,8 @@ header {
 }
 
 .social-icons a {
-    color: #333;
-    font-size: 2.1em;
+    color: #000000;
+    font-size: 1.5em;
     transition: color 0.2s;
 }
 
@@ -123,43 +130,12 @@ header {
     color: #007acc; /* Highlight color on hover */
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 85%;
-    width: 100%;;
-    padding: 0;
-    background-color: rgba(255, 255, 255, 0.55);
-    border-radius: 10px;
-    overflow-x: auto;
-    white-space: nowrap;
-}
 
-.project {
-    display: inline-block;
-    background-color: rgba(232, 9, 9, 1);
-    border-radius: 10px;
-    margin: 30px;
-    padding: 5px;
-    /* width: 100%; */
-    text-align: center;
-    vertical-align: top;
-}
-
-.project img {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 0;
-    padding: 0px;
-}
-
-.project a {
-    display: block;
-    margin-top: 0;
-}
-
-.project a:hover {
-    text-decoration: underline;
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(0deg) rotateY(360deg);
+    }
 }
