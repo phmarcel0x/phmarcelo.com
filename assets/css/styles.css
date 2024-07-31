@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -37,27 +38,33 @@ header {
 
 header h1 {
     background-color: whitesmoke;
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: rgb(0, 0, 0);
     padding: 1rem;
 }
 
 header h2 {
     background-color: whitesmoke;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
     color: rgb(0, 0, 0);
     margin-top: 20px;
     font-weight: 400;
 }
 
-header p {
+header h3 {
     background-color: whitesmoke;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
     color: rgb(0, 0, 0);
     margin-top: 20px;
     font-weight: 400;
+}
+
+footer {
+    margin-top: 200px;
+    font-size: 1.2rem;
+    color: #000000;
 }
 
 .highlight {
@@ -86,40 +93,23 @@ header p {
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 200px;
-    margin-top: 250px;
+    gap: 250px;
+    margin-top: 200px;
 }
 
 /* Rotating Cube Cards */
 .card {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;  
     perspective: 1000px;
 }
 
-.cube-projects {
+.cube-projects, .cube-cv, .cube-academic {
     width: 100%;
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    animation: rotate 5s infinite linear;
-    cursor: pointer;
-}
-.cube-cv {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: rotate 5s infinite linear;
-    cursor: pointer;
-}
-
-.cube-academic {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: rotate 5s infinite linear;
+    animation: rotate 10s infinite linear;
     cursor: pointer;
 }
 
@@ -131,40 +121,41 @@ header p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.0rem;
+    font-size: 1.7rem;
     color: #ffffff;
     text-align: center;
 }
 
 .front {
-    background: linear-gradient(45deg, #f00, #0ff);
-    transform: translateZ(50px);
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.5));
+    transform: translateZ(100px);   
 }
 
 .back {
-    background: linear-gradient(45deg, #0ff, #f00);
-    transform: translateZ(-50px) rotateY(180deg);
+    background: linear-gradient(45deg, rgba(0, 255, 255, 0.5), rgba(255, 0, 0, 0.5));
+    transform: translateZ(-100px) rotateY(180deg);   
 }
 
 .top {
-    background: linear-gradient(45deg, #f0f, #ff0);
-    transform: rotateX(90deg) translateZ(50px);
+    background: linear-gradient(45deg, rgba(255, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    transform: rotateX(90deg) translateZ(100px);   
 }
 
 .bottom {
-    background: linear-gradient(45deg, #ff0, #f0f);
-    transform: rotateX(-90deg) translateZ(50px);
+    background: linear-gradient(45deg, rgba(255, 255, 0, 0.5), rgba(255, 0, 255, 0.5));
+    transform: rotateX(-90deg) translateZ(100px);   
 }
 
 .left {
-    background: linear-gradient(45deg, #0f0, #00f);
-    transform: rotateY(-90deg) translateZ(50px);
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.5), rgba(0, 0, 255, 0.5));
+    transform: rotateY(-90deg) translateZ(100px);   
 }
 
 .right {
-    background: linear-gradient(45deg, #00f, #0f0);
-    transform: rotateY(90deg) translateZ(50px);
+    background: linear-gradient(45deg, rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5));
+    transform: rotateY(90deg) translateZ(100px);   
 }
+
 
 @keyframes rotate {
     from {
