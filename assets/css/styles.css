@@ -58,14 +58,14 @@ header h3 {
 
 footer {
     position:fixed;
-    bottom: 20px; /* Distance from the bottom */
+    bottom: 10px;
     width: 100%;
     font-size: 1rem;
     color: #000000;
     text-align: center;
     padding: 10px 0;
-    background-color: #ff0000; /* Ensure the footer stands out */
-}
+    /* background-color: #ff0000; */
+} 
 
 .highlight {
     font-weight: 700;
@@ -106,6 +106,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .cube-projects, .cube-cv, .cube-academic {
