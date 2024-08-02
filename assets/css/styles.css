@@ -51,9 +51,25 @@ header h2 {
 }
 
 header h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     margin: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #000000;
+    font-size: 1.5em;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #007acc; /* Highlight color on hover */
 }
 
 footer {
