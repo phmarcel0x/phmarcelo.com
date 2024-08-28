@@ -16,3 +16,6 @@ For any inquiries, collaborations, or just to say hi, you can reach me at: [marc
 ---
 
 Thank you for visiting! Let’s build the future together.
+
+![GitHub last commit](https://img.shields.io/github/last-commit/phmarcel0x/phmarcelo.com)
+![GitHub issues](https://img.shields.io/github/issues/phmarcel0x/phmarcelo.com)
