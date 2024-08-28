@@ -121,13 +121,16 @@ header h3 {
 
 footer {
     /* position: fixed; */
-    /* bottom: 0;
+    bottom: 10px;
     left: 0;
-    right: 0; */
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
     color: #000000;
     text-align: center;
-    /* padding: 10px 0; */
+    padding: 10px 0;
 }
 
 
@@ -180,7 +183,7 @@ footer {
     top: 0;
     left: 0;
     transform-style: preserve-3d;
-    animation: rotate 15s infinite linear;
+    animation: rotate 5s infinite linear;
 }
 
 .side {
@@ -241,17 +244,6 @@ footer {
     pointer-events: none;
 }
 
-.pdf-render-container {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* Ensure the background matches your page */
-}
 
 .test-scroll{
     width: 100%;
@@ -263,6 +255,40 @@ footer {
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* Ensure the background matches your page */
+}
+
+
+/* pdf rendering */
+.pdf-render-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Match your page background */
+}
+
+.pdf-page {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    margin-bottom: 20px; /* Space between pages */
+}
+
+.canvas-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pdf-text-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allows text selection without interfering with interactions */
+    width: 100%;
+    height: 100%;
 }
 
 
