@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>Curriculum Vitae - Marcelo Hernandez</title>
+    <script src="https://kit.fontawesome.com/fdf5e05728.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="/assets/js/pdf-render.js"></script>
+    <title>Resume - Marcelo Hernandez</title>
 </head>
 <body>
-    <header>
-        <h1>Curriculum Vitae</h1>
+    <header class="sub-header">
+        <a href="index.html" class="home-button">
+            <i class="fas fa-home"></i>
+        </a>
+        <h1>Resume</h1>
     </header>
     <main>
-        <!-- Embed the PDF -->
+        <div id="pdf-render-container" class="pdf-render-container"></div>
+        
+        <!-- Embed the PDF
         <div class="pdf-container">
-            <embed src="/assets/TechPM - Resume.pdf" type="application/pdf" width="100%" height="600px">
-            <!-- Alternatively, you can use an iframe if embed does not work as intended -->
-            <!-- <iframe src="/assets/TechPM - Resume.pdf" width="100%" height="600px"></iframe> -->
-        </div>
+            <embed src="/assets/TechPM - Resume.pdf" width="100%" height="100%">
+        </div> -->
     </main>
     <footer>
-        <div class="footer-container">
+        <div class="sub-footer-container">
             <p>Marcelo Hernandez &copy; 2024</p>
         </div>
     </footer>
