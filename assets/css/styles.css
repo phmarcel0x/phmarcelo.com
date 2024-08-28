@@ -21,7 +21,6 @@ body {
     
 }
 
-
 .content-wrapper {
     flex: 1;
 }
@@ -33,24 +32,50 @@ header {
 }
 
 .sub-header{
-        position: relative; /* Ensure the home button is positioned correctly within the header */
-        width: 100%;
-        color: #000000;
-        margin: 5px auto;
-        display: flex;
-        align-items: center; /* Aligns the home button and h1 vertically */
-        justify-content: center; /* Keeps the h1 centered */
+    position: relative; /* Ensure the home button is positioned correctly within the header */
+    width: 100%;
+    color: #000000;
+    margin: 5px auto;
+    display: flex;
+    align-items: center; /* Aligns the home button and h1 vertically */
+    justify-content: center; /* Keeps the h1 centered */
 }
 
 .home-button {
     position: absolute;
-    left: 20px; /* Adjust to a visually pleasing margin */
-    font-size: 24px;
+    left: 24px;
+    font-size: 28px;
     color: black;
     text-decoration: none;
     z-index: 10;
     display: flex;
-    align-items: center; /* Aligns the icon vertically */
+    align-items: center;
+}
+
+.home-button:hover {
+    transform: scale(1.2); /* Slight scale effect on hover */
+}
+
+.sub-icons {
+    position: absolute;
+    right: 24px;
+    display: flex;
+    gap: 20px; /* Adjusts spacing between icons */
+    z-index: 10;
+}
+
+.sub-icons a {
+    color: #000000;
+    font-size: 28px;
+    transition: color 0.4s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes the underline */
+}
+
+.sub-icons a:hover {
+    color: #007acc; /* Highlight color on hover */
+    transform: scale(1.2); /* Slight scale effect on hover */
 }
 
 .header-container {
@@ -91,6 +116,7 @@ header h3 {
 
 .social-icons a:hover {
     color: #007acc; /* Highlight color on hover */
+    transform: scale(1.2); /* Slight scale effect on hover */
 }
 
 /* footer {
@@ -131,6 +157,15 @@ footer {
     color: #000000;
     text-align: center;
     padding: 10px 0;
+}
+
+.footer-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    transform: scale(1.2); /* Slight scale effect on hover */
 }
 
 
@@ -176,6 +211,11 @@ footer {
     cursor: pointer;
 }
 
+.card:hover .cube-projects, .card:hover .cube-cv, .card:hover .cube-academic {
+    /* animation-play-state: running; */
+    animation-play-state: paused;
+}
+
 .cube-projects, .cube-cv, .cube-academic {
     width: 100%;
     height: 100%;
@@ -184,6 +224,8 @@ footer {
     left: 0;
     transform-style: preserve-3d;
     animation: rotate 5s infinite linear;
+    /* animation-play-state: paused; */
+    animation-play-state: running;
 }
 
 .side {
