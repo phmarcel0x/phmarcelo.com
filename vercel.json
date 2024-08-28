@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+      {
+        "source": "/:path*",
+        "destination": "/:path*.html"
+      }
+    ],
+    
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/home",
+        "permanent": true
+      }
+    ]
+  }
