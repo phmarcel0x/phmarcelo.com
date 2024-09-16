@@ -1,5 +1,5 @@
 // pdf-render.js
-const url = '/docs/pdfs/website-resume.pdf'; // Path to your PDF
+const url = '/docs/pdfs/website-resume 2.pdf'; // Path to your PDF
 
 const renderPDF = async () => {
     const loadingTask = pdfjsLib.getDocument(url);
