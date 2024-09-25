@@ -1,13 +1,19 @@
 {
-    "rewrites": [
-      {
-        "source": "/home",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/:path*",
-        "destination": "/:path*.html"
-      }
-    ]
-  }
-  
+  "rewrites": [
+    {
+      "source": "/home",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/:path*.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index",
+      "destination": "/home",
+      "permanent": true
+    }
+  ]
+}
