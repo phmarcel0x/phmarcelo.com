@@ -212,8 +212,8 @@ footer {
 }
 
 .card:hover .cube-projects, .card:hover .cube-cv, .card:hover .cube-academic {
-    /* animation-play-state: running; */
-    animation-play-state: paused;
+    animation-play-state: running;
+    /* animation-play-state: paused; */
 }
 
 .cube-projects, .cube-cv, .cube-academic {
